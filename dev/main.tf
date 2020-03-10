@@ -1,6 +1,6 @@
 variable "multiple" {
   default = 2
-  }
+}
 
 resource "null_resource" "HelloDev" {
   count = var.multiple

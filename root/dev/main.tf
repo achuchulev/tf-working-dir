@@ -1,5 +1,5 @@
 variable "multiple" {
-  default = 2
+  default = 1
 }
 
 resource "null_resource" "HelloDev" {

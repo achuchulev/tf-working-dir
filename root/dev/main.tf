@@ -1,6 +1,6 @@
-variable "multiple" {
-  default = 1
-}
+#variable "multiple" {
+#  default = 1
+#}
 
 #resource "null_resource" "HelloDev" {
 #  count = var.multiple

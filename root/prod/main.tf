@@ -1,10 +1,3 @@
-variable "multiple" {
-  default = 1
-}  
-
-resource "null_resource" "HelloProd" {
-  count = var.multiple
-  provisioner "local-exec" {
-    command = "echo Hello Prod ${count.index + 1}!"
-  }
+module "private_null" {
+  source = "git@github.com:achuchulev/tf-null-count-priv.git//modules/tf/null?ref=v0.0.3"
 }
